@@ -1,0 +1,30 @@
+#####################################
+# CORE FRAMEWORK
+#####################################
+Django==5.0.*
+django-environ==0.11.* # For managing settings and environment variables (Step 10)
+psycopg2-binary==2.9.* # PostgreSQL driver (psycopg2) (Step 3)
+
+#####################################
+# API & AUTH (DRF)
+#####################################
+djangorestframework==3.15.* # The main boss for APIs (Step 6)
+djangorestframework-simplejwt==5.3.* # JWT authentication (Step 6)
+drf-spectacular==0.27.* # For OpenAPI/Swagger documentation (Step 6)
+
+#####################################
+# ASYNC & CACHING
+#####################################
+celery==5.3.* # For background tasks (Step 5)
+redis==5.0.* # Python client for Redis (cache and Celery broker) (Step 5/9)
+
+#####################################
+# SECURITY & DEPLOYMENT
+#####################################
+gunicorn==22.0.* # Production HTTP server (Step 9/10)
+Pillow==10.1.* # Required for handling image fields (Media files) (Step 5)
+
+#####################################
+# OPTIONAL (Highly Recommended)
+#####################################
+sentry-sdk==1.40.* # Production error monitoring (Step 11)
